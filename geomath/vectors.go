@@ -1,7 +1,6 @@
 package geomath
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -11,6 +10,10 @@ type Vec2 struct {
 
 type Vec3 struct {
 	X, Y, Z float64
+}
+
+type Point struct {
+	Xw, Yw, Zw, Xp, Yp, Zp float64
 }
 
 func (v1 Vec3) Add(v2 Vec3) Vec3 {
@@ -75,10 +78,4 @@ func (v Vec3) ProjectYZ() Vec3 {
 
 func (v Vec3) ProjectZX() Vec3 {
 	return Vec3{Z: v.Z, X: v.X}
-}
-
-func test() {
-	t := 1
-	fmt.Print(t)
-
 }

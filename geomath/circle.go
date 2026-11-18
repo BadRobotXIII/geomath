@@ -31,7 +31,3 @@ func (s Circle) Cord(a float64, b float64, c float64) float64 {
 	math.Sqrt(c)
 	return c
 }
-
-func (s Circle) Tan() {
-
-}
